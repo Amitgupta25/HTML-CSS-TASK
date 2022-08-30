@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #68EACC 0%, #46dfdf);
+    position: relative ;
+}
+
+/* For the whole workspace */
+
+.wrapper {
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 25px;
+    background: white;
+}
+
+.wrapper header {
+    font-size: 30px;
+    font-weight: 300px;
+    text-align: center;
+}
+
+/* For the input field present to add task  */
+
+.wrapper .inputField {
+    display: flex;
+    height: 45px;
+    margin: 20px 0;
+    width: 100%;
+    
+}
+
+.inputField input {
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.inputField button {
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background: seagreen;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.wrapper .todoList {
+     max-height: 250px;
+     overflow-y: auto;
+}
+
+/* Todo List (Added Tasks) */
+
+.todoList li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.todoList li span {
+        position: absolute;
+        right: -30px;
+        color:#fff;
+        width: 45px;
+        text-align: center;
+        background: red;
+        border-radius: 0 3px 3px 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+}
+
+.todoList li:hover span {
+    right: 0px;
+}
+
+/* For the footer elements */
+
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer button {
+    border: none;
+    outline: none;
+    background: seagreen;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px;
+
+}
+
+.bottom {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    font-size: 18px;
+    bottom: 4px;
+    color: black;
+    text-align: center;
+}
